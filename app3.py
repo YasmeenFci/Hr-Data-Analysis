@@ -471,7 +471,7 @@ st.markdown("""<style>
 # ─── Data Loader ─────────────────────────────────────────────────────────────
 @st.cache_data
 def load_data():
-    df = pd.read_csv("data\hr_clean_data.csv", parse_dates=["hire_date"])
+    df = pd.read_csv("data/hr_clean_data.csv", parse_dates=["hire_date"])
     # ensure numeric types
     for col in ["salary", "age", "years_at_company", "performance_score",
                 "satisfaction_score", "training_hours", "projects_completed",
